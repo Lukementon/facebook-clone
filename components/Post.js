@@ -14,7 +14,6 @@ const Post = ({ name, message, email, postImage, image, timestamp }) => {
             src={image}
             width={40}
             height={40}
-            alt=""
           />
           <div>
             <p className="font-medium">{name}</p>
