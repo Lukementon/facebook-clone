@@ -79,6 +79,7 @@ const InputBox = () => {
     <div className="bg-white p-2 rounded-2xl shadow-md text-gray-500 font-medium mt-6">
       <div className="flex space-x-4 p-4 items-center">
         <Image
+          alt="user"
           className="rounded-full"
           src={session.user.image}
           width={40}
@@ -102,7 +103,11 @@ const InputBox = () => {
             onClick={removeImage}
             className="flex flex-col filter hover:brightness-110 transition duration-150 transform hover:scale-105 cursor-pointer"
           >
-            <img className="h-10 object-contain" src={imageToPost} alt="" />
+            <Image
+              className="h-10 object-contain"
+              src={imageToPost}
+              alt="uploaded"
+            />
             <p className="text-xs text-red-500 text-center">Remove</p>
           </div>
         )}

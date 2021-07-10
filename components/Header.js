@@ -25,6 +25,7 @@ const Header = () => {
       {/* Left */}
       <div className="flex items-center">
         <Image
+          alt="icon"
           src="https://links.papareact.com/5me"
           width={40}
           height={40}
@@ -54,6 +55,7 @@ const Header = () => {
       {/* Right */}
       <div className="flex items-center sm:space-x-2 justify-end">
         <Image
+          alt="nav icons"
           onClick={signOut}
           className="rounded-full cursor-pointer"
           src={session.user.image}

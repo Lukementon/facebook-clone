@@ -8,7 +8,8 @@ const Post = ({ name, message, email, postImage, image, timestamp }) => {
     <div className="flex flex-col">
       <div className="p-5 bg-white mt-5 rounded-t-2xl shadow-sm">
         <div className="flex items-center space-x-2">
-          <img
+          <Image
+            alt="post"
             className="rounded-full"
             src={image}
             width={40}
@@ -32,7 +33,7 @@ const Post = ({ name, message, email, postImage, image, timestamp }) => {
 
       {postImage && (
         <div className="relative h-56 md:h-96 bg-white">
-          <Image src={postImage} objectFit="cover" layout="fill" />
+          <Image alt="icon" src={postImage} objectFit="cover" layout="fill" />
         </div>
       )}
 

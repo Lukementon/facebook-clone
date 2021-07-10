@@ -6,6 +6,7 @@ const Login = () => {
   return (
     <div className="grid place-items-center">
       <Image
+        alt="login"
         src="https://links.papareact.com/t4i"
         height={400}
         width={400}
