@@ -33,7 +33,12 @@ const Post = ({ name, message, email, postImage, image, timestamp }) => {
 
       {postImage && (
         <div className="relative h-56 md:h-96 bg-white">
-          <Image alt="icon" src={postImage} objectFit="cover" layout="fill" />
+          <Image
+            alt="secondary post"
+            src={postImage}
+            objectFit="cover"
+            layout="fill"
+          />
         </div>
       )}
 
